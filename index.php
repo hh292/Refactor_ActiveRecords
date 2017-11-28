@@ -3,8 +3,8 @@
 ini_set('display_errors', 'On');
 error_reporting(E_ERROR );
 
-// Namespace for diplatHtml class.......hh292
 
+//Type1: use of namespace ....hh292
 //include "displayHtml.php";
 //use Display\displayHtml as def;
 //$obj = new def;
@@ -23,6 +23,8 @@ class Manage {
     }
 }
 spl_autoload_register(array('Manage', 'autoload'));
+
+//Type2: Namespace for diplatHtml class.......hh292
 
 use display\displayHtml;
 $obj=new displayHtml;
